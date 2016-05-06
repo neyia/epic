@@ -3,6 +3,6 @@
  */
 jQuery(document).ready(function ($) {
 
-    //$('.page-header').load('../src/_html_inc/header.html');
+    $('.page-header').append('../src/_html_inc/header.html');
     
 });
