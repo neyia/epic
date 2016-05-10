@@ -100,5 +100,7 @@ input[type="checkbox"]:checked + label:before {
   content: '';
 }
 body {
-  background: lavender;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", "Courier New", Courier, monospace;
 }
