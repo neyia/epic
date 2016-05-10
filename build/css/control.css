@@ -1,5 +1,5 @@
 input[type="checkbox"],
-input[type=checkbox] + label {
+input[type="checkbox"] + label {
   width: auto;
   padding: 0;
   margin: 0;
@@ -37,19 +37,4 @@ input[type="checkbox"]:checked + label:before {
   font-size: 10px;
   padding: 2px 2px 3px 3px;
   margin-right: -2px;
-}
-.admin.coach .goal-settings input[type="checkbox"]:checked + label:before {
-  margin-right: 10px;
-}
-tbody tr td input[type="checkbox"] + label {
-  right: 9px;
-}
-tbody tr td input[type="checkbox"] + label:before {
-  width: 14px;
-  height: 14px;
-  border: 2px solid grey;
-  padding: 0;
-}
-tbody tr td input[type="checkbox"]:checked + label:before {
-  padding: 2px;
 }

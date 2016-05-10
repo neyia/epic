@@ -1,14 +1,69 @@
-//== Variables
+// - // Projects defaults // - //
 
-//== Colors
-@black282:   #28292f;
-@black515:   #51525a;
-@blue:       #1b8aaa;
+.hide                            { display: none;}
 
-//== Typography
-@font-family-open-sans:   "Open Sans", "Courier New", Courier, monospace;
-@font-size-base:          14px;
-@font-size-base-mobile:   24px;
-@font-line-height:        1.4;
+.inline-block                    { display: inline-block;}
+.block,.show                     { display: block;}
 
-@font-size-h1-desktop:                ceil((@font-size-base * 1.7));     // ~24px
+.relative                        { position: relative;}
+.absolute                        { position: absolute;}
+
+.left                            { float: left;}
+.right                           { float: right;}
+
+.text-center                     { text-align: center;}
+.text-left                       { text-align: left;}
+.text-right                      { text-align: right;}
+
+.vertical-top                    { vertical-align: top;}
+
+.text-uppercase                  { text-transform: uppercase;}
+
+.clearfix:after{
+    float: none;
+    display: block;
+    clear: both;
+    content: '';
+}
+
+// - // Projects mixins // - //
+
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+.content-sizing (@type: content-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+.border-radius (@radius: 11px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    -khtml-border-radius: @radius;
+    -o-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -icab-border-radius: @radius;
+    -webkit-border-top-left-radius: @radius;
+    -webkit-border-bottom-left-radius: @radius;
+    -webkit-border-top-right-radius: @radius;
+    -webkit-border-bottom-right-radius: @radius;
+}
+.rotate (@grad: 90deg) {
+    -ms-transform: rotate(@grad);
+    -webkit-transform: rotate(@grad);
+    transform: rotate(@grad);
+}
+.opacity(@opacity: 50){
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity = @opacity);
+    -moz-opacity: 0.01*@opacity;
+    -khtml-opacity: 0.01*@opacity;
+    opacity: 0.01*@opacity;
+}
+.font-styles(@font_size: 14px, @line_height: 16px,@font_weight: 400){
+    font-size: @font_size;
+    line-height: @line_height;
+    font-weight: @font_weight;
+}

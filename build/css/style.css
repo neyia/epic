@@ -1,3 +1,104 @@
+@font-face {
+  font-family: 'PT Serif Caption';
+  src: url(../../fonts/Pt-Serif-Caption/Pt-Serif-Caption.ttf), url(../../fonts/Pt-Serif-Caption/Pt-Serif-Caption.woff);
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url(../../fonts/Fira-Sans/Fira-Sans-Regular.ttf), url(../../fonts/Fira-Sans/Fira-Sans-Regular.woff);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  src: url(../../fonts/Fira-Sans/Fira-Sans-Medium.ttf), url(../../fonts/Fira-Sans/Fira-Sans-Medium.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'PT Sans Caption Bold';
+  src: url(../../fonts/Pt-Sans-Caption/Pt-Sans-Caption-Bold.ttf), url(../../fonts/Pt-Sans-Caption/Pt-Sans-Caption-Bold.woff);
+}
+input[type="checkbox"],
+input[type="checkbox"] + label {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+input[type="checkbox"] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+input[type="checkbox"] + label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin: -10px 0 0;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background: white;
+  color: blueviolet;
+  border-radius: 3px;
+}
+input[type="checkbox"]:checked + label:before {
+  content: "\e902";
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  padding: 2px 2px 3px 3px;
+  margin-right: -2px;
+}
+.hide {
+  display: none;
+}
+.inline-block {
+  display: inline-block;
+}
+.block,
+.show {
+  display: block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.clearfix:after {
+  float: none;
+  display: block;
+  clear: both;
+  content: '';
+}
 body {
   background: lavender;
 }
