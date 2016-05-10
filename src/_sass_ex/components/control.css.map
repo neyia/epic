@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,MAAE;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;AAEpB,MAAE;EACE,OAAO,EAAE,YAAY;AAEzB,KAAC;EACG,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,QAAQ;EACjB,eAAe,EAAE,IAAI",
+"sources": ["control.sass"],
+"names": [],
+"file": "control.css"
+}
